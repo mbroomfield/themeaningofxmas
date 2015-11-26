@@ -1,0 +1,84 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background: url( bg.jpg );
+    background-size: cover;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Satisfy', cursive;
+    color: #444;
+}
+
+.bg-white {
+    background: #fff;
+    opacity: .7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    z-index: 10;
+    min-height: 400px;
+    background: rgba(255,255,255,.6);
+    box-shadow: 2px 4px 12px rgba( 0, 0, 0, .6);
+}
+
+.intro {
+    padding: 40px 15px 5px 15px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+
+.intro .new-xmas {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.intro .new-xmas:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 100%;
+    padding: 35px 15px;
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #424242;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+@media only screen and ( max-width:700px ) {
+    h1 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .intro .new-xmas {
+        display: block;
+        position: static;
+        margin-top: 4px;
+    }
+}
