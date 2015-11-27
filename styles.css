@@ -71,6 +71,17 @@ h1 {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
+.credit {
+	font-size: 14px;
+	line-height: 16px;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-style: italic;
+	color: #828282;
+}
+
 @media only screen and ( max-width:700px ) {
     h1 {
         font-size: 22px;
