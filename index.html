@@ -11,19 +11,17 @@
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500' rel='stylesheet' type='text/css'>
     <link href="styles.css" type="text/css" rel="stylesheet"/>
     
-    <script src="jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="snowstorm.js" type="text/javascript"></script>
-    <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
 
 	<div class="container">
 		<div class="intro">
 			<h1>Christmas Movie Generator</h1>
-			<a href="#" class="new-xmas">[Generate New Movie]</a>
+			<a href="#" id="js--new-movie" class="new-xmas">[Generate New Movie]</a>
 		</div>
 
-		<div class="content">
+		<div class="content" id="content">
 		</div>
 		
 		<div class="credit">a Mark and Sarah Production</div>
@@ -39,6 +37,19 @@
 	  ga('create', 'UA-70456820-1', 'auto');
 	  ga('send', 'pageview');
 
+	</script>
+    <script src="data.js" type="text/javascript"></script>
+	<script>
+		function generate() {
+			document.getElementById('content').innerHTML = main();
+		}
+		window.addEventListener('load', () => {
+			generate();
+			document.getElementById('js--new-movie').addEventListener('click', function(e) {
+				e.preventDefault();
+				generate();
+			});
+		})
 	</script>
 
 </body>
